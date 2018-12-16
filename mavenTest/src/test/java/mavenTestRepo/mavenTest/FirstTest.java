@@ -17,7 +17,7 @@ public class FirstTest {
 		driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		
-		//code to launch browser and url in chrome
+		//code to launch browser and url in chrome eclipse
 		driver.get("https://www.smh.com.au/");
 		
 		/*try {
