@@ -18,8 +18,7 @@ public class HomePage extends BaseClass {
 	}
 	
 	public void verifyTeaNameHeader() {
-		List<WebElement> teaType = driver.findElements(By.xpath("//div[starts-with(@id,'wsb-element')]/div/p/span/span/strong"));
-		
+		//List<WebElement> teaType = driver.findElements(By.xpath("//div[starts-with(@id,'wsb-element')]/div/p/span/span/strong"));
 		for (int i = 0; i < 3; i++ ) {
 			//Assert.assertTrue(teaType.contains(abc.get(i).name));
 			boolean teaName = driver.findElement(By.xpath("//div[starts-with(@id,'wsb-element')]/div/p/span/span/strong[contains(text(),'" +jsonList.get(i).name+ "')]")).isDisplayed();
